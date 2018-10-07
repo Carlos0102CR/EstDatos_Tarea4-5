@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AVL\avlTree.cs" />
-    <Compile Include="B+\b+Tree.cs" />
+    <Compile Include="B+\bPlusTree.cs" />
     <Compile Include="B\bTree.cs" />
     <Compile Include="Red-Black\redBlackTree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

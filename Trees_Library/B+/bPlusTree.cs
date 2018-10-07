@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trees_Library.B_
 {
-    class b_Tree
+    class bPlusTree
     {
     }
 }

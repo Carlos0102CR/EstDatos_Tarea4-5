@@ -41,13 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Red-Black\Class1.cs" />
+    <Compile Include="AVL\avlTree.cs" />
+    <Compile Include="B+\b+Tree.cs" />
+    <Compile Include="B\bTree.cs" />
+    <Compile Include="Red-Black\redBlackTree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AVL\" />
-    <Folder Include="B++\" />
-    <Folder Include="B\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

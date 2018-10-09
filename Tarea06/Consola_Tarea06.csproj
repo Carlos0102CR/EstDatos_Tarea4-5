@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tabla_Hash_Libreria\Tabla_Hash_Libreria.csproj">
+      <Project>{36002df8-782a-4343-9025-83e66489cc9c}</Project>
+      <Name>Tabla_Hash_Libreria</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

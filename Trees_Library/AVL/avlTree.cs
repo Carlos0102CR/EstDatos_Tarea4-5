@@ -12,10 +12,12 @@ namespace Trees_Library.AVL
 
         public AVLTree(){
             raiz = null;
-        }                       
+        }    
+        
         public void Add(int data)
         {
             Node newItem = new Node(data);
+
             if (root == null)
             {
                 root = newItem; 

@@ -1,2 +1,5 @@
-C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tabla_Hash_Libreria\obj\Debug\Tabla_Hash_Libreria.csprojResolveAssemblyReference.cache
 C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tabla_Hash_Libreria\obj\Debug\Tabla_Hash_Libreria.csproj.CoreCompileInputs.cache
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tabla_Hash_Libreria\bin\Debug\Tabla_Hash_Libreria.dll
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tabla_Hash_Libreria\bin\Debug\Tabla_Hash_Libreria.pdb
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tabla_Hash_Libreria\obj\Debug\Tabla_Hash_Libreria.dll
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tabla_Hash_Libreria\obj\Debug\Tabla_Hash_Libreria.pdb

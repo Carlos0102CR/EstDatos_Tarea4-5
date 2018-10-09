@@ -9,9 +9,9 @@ namespace Tabla_Hash_Libreria
    public class HashNode
     {
         int key;
-        string data;
+        Persona data;
         HashNode next;
-        public HashNode(int key, string data)
+        public HashNode(int key, Persona data)
         {
             this.key = key;
             this.data = data;
@@ -21,7 +21,7 @@ namespace Tabla_Hash_Libreria
         {
             return key;
         }
-        public string getdata()
+        public Persona getdata()
         {
             return data;
         }

@@ -5,3 +5,6 @@ C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\obj\Debug\Con
 C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\obj\Debug\Consola_Tarea06.csproj.CoreCompileInputs.cache
 C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\obj\Debug\Tarea06.exe
 C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\obj\Debug\Tarea06.pdb
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\bin\Debug\Tabla_Hash_Libreria.dll
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\bin\Debug\Tabla_Hash_Libreria.pdb
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\obj\Debug\Consola_Tarea06.csproj.CopyComplete

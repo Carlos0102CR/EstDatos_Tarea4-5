@@ -1,0 +1,7 @@
+C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\EstDatos_Tarea05\bin\Debug\EstDatos_Tarea05.exe.config
+C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\EstDatos_Tarea05\bin\Debug\EstDatos_Tarea05.exe
+C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\EstDatos_Tarea05\bin\Debug\EstDatos_Tarea05.pdb
+C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\EstDatos_Tarea05\obj\Debug\Console_Tarea05.csprojAssemblyReference.cache
+C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\EstDatos_Tarea05\obj\Debug\Console_Tarea05.csproj.CoreCompileInputs.cache
+C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\EstDatos_Tarea05\obj\Debug\EstDatos_Tarea05.exe
+C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\EstDatos_Tarea05\obj\Debug\EstDatos_Tarea05.pdb

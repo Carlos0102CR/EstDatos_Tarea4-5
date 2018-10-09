@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Tabla_Hash_Libreria
 {
-   public class HasNode
+   public class HashNode
     {
         int key;
         string data;
-        HasNode next;
-        public HasNode(int key, string data)
+        HashNode next;
+        public HashNode(int key, string data)
         {
             this.key = key;
             this.data = data;
@@ -25,11 +25,11 @@ namespace Tabla_Hash_Libreria
         {
             return data;
         }
-        public void setNextNode(HasNode obj)
+        public void setNextNode(HashNode obj)
         {
             next = obj;
         }
-        public HasNode getNextNode()
+        public HashNode getNextNode()
         {
             return this.next;
         }

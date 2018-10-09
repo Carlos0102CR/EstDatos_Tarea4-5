@@ -41,9 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HashNode.cs" />
     <Compile Include="Persona.cs" />
-    <Compile Include="HasNode.cs" />
- 
     <Compile Include="OpenTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

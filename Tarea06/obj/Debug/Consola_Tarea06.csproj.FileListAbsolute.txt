@@ -1,0 +1,2 @@
+C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\Tarea06\obj\Debug\Consola_Tarea06.csprojAssemblyReference.cache
+C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\Tarea06\obj\Debug\Consola_Tarea06.csproj.CoreCompileInputs.cache

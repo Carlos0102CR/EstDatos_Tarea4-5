@@ -8,245 +8,248 @@ namespace Trees_Library.AVL
 {
     public class AVLTree
     {
-        private Nodo raiz;
+         private Nodo raiz;
+        private string concatenacion;
 
-        public AVLTree(){
+        public Arbol_AVL()
+        {
             raiz = null;
-        }    
-        
-        public void Add(int data)
-        {
-            Node newItem = new Node(data);
+            concatenacion = "";
+        }
 
-            if (root == null)
+        public bool insertarElemento(int dato)
+        {
+            Nodo nodo = new Nodo { elemento = dato };
+
+            if (!encontrarValor(dato))
             {
-                root = newItem; 
+                raiz = insertarRecursivo(raiz, nodo);
+                return true;
             }
             else
             {
-                root = RecursiveInsert(root, newItem);
+                return false;
             }
         }
-        private Node RecursiveInsert(Node current, Node n)
+
+        private Nodo insertarRecursivo(Nodo nodoRaiz, Nodo nuevo)
         {
-            if (current == null)
+            if (nodoRaiz == null)
             {
-                current = n;
-                return current;
+                nodoRaiz = nuevo;
+                return nodoRaiz;
             }
-            else if (n.data < current.data)
+            else if (nuevo.elemento < nodoRaiz.elemento)
             {
-                current.left = RecursiveInsert(current.left, n);
-                current = balance_tree(current);
-            }
-            else if (n.data > current.data)
-            {
-                current.right = RecursiveInsert(current.right, n);
-                current = balance_tree(current);
-            }
-            return current;
-        }
-        private Node balance_tree(Node current)
-        {
-            int b_factor = balance_factor(current);
-            if (b_factor > 1)
-            {
-                if (balance_factor(current.left) > 0)
-                {
-                    current = RotateLL(current);
-                }
-                else
-                {
-                    current = RotateLR(current);
-                }
-            }
-            else if (b_factor < -1)
-            {
-                if (balance_factor(current.right) > 0)
-                {
-                    current = RotateRL(current);
-                }
-                else
-                {
-                    current = RotateRR(current);
-                }
-            }
-            return current;
-        }
-        public void Delete(int target)
-        {//and here
-            root = Delete(root, target);
-        }
-        private Node Delete(Node current, int target)
-        {
-            Node parent;
-            if (current == null)
-            { return null; }
-            else
-            {
-                //left subtree
-                if (target < current.data)
-                {
-                    current.left = Delete(current.left, target);
-                    if (balance_factor(current) == -2)//here
-                    {
-                        if (balance_factor(current.right) <= 0)
-                        {
-                            current = RotateRR(current);
-                        }
-                        else
-                        {
-                            current = RotateRL(current);
-                        }
-                    }
-                }
-                //right subtree
-                else if (target > current.data)
-                {
-                    current.right = Delete(current.right, target);
-                    if (balance_factor(current) == 2)
-                    {
-                        if (balance_factor(current.left) >= 0)
-                        {
-                            current = RotateLL(current);
-                        }
-                        else
-                        {
-                            current = RotateLR(current);
-                        }
-                    }
-                }
-                //if target is found
-                else
-                {
-                    if (current.right != null)
-                    {
-                        //delete its inorder successor
-                        parent = current.right;
-                        while (parent.left != null)
-                        {
-                            parent = parent.left;
-                        }
-                        current.data = parent.data;
-                        current.right = Delete(current.right, parent.data);
-                        if (balance_factor(current) == 2)//rebalancing
-                        {
-                            if (balance_factor(current.left) >= 0)
-                            {
-                                current = RotateLL(current);
-                            }
-                            else { current = RotateLR(current); }
-                        }
-                    }
-                    else
-                    {   //if current.left != null
-                        return current.left;
-                    }
-                }
-            }
-            return current;
-        }
-        public void Find(int key)
-        {
-            if (Find(key, root).data == key)
-            {
-                Console.WriteLine("{0} was found!", key);
+                nodoRaiz.nodoIzquierdo = insertarRecursivo(nodoRaiz.nodoIzquierdo, nuevo);
+                nodoRaiz = balancearArbol(nodoRaiz);
             }
             else
             {
-                Console.WriteLine("Nothing found!");
+                nodoRaiz.nodoDerecho = insertarRecursivo(nodoRaiz.nodoDerecho, nuevo);
+                nodoRaiz = balancearArbol(nodoRaiz);
             }
+
+            return nodoRaiz;
         }
-        private Node Find(int target, Node current)
+
+        private Nodo balancearArbol(Nodo nodoRaiz)
         {
- 
-                if (target < current.data)
+            int factorEquilibrio = obtenerFactorEquilibrioNodo(nodoRaiz);
+
+            if (factorEquilibrio > 1)
+            {
+                if (obtenerFactorEquilibrioNodo(nodoRaiz.nodoIzquierdo) > 0)
                 {
-                    if (target == current.data)
-                    {
-                        return current;
-                    }
-                    else
-                    return Find(target, current.left);
+                    nodoRaiz = rotarDobleIzquierdo(nodoRaiz);
                 }
                 else
                 {
-                    if (target == current.data)
-                    {
-                        return current;
-                    }
-                    else
-                    return Find(target, current.right);
+                    nodoRaiz = rotarSimpleDerecho(nodoRaiz);
                 }
-             
-        }
-        public void DisplayTree()
-        {
-            if (root == null)
-            {
-                Console.WriteLine("Tree is empty");
-                return;
             }
-            InOrderDisplayTree(root);
-            Console.WriteLine();
-        }
-        private void InOrderDisplayTree(Node current)
-        {
-            if (current != null)
+            else if (factorEquilibrio < -1)
             {
-                InOrderDisplayTree(current.left);
-                Console.Write("({0}) ", current.data);
-                InOrderDisplayTree(current.right);
+                if (obtenerFactorEquilibrioNodo(nodoRaiz.nodoDerecho) > 0)
+                {
+                    nodoRaiz = rotarSimpleIzquierdo(nodoRaiz);
+                }
+                else
+                {
+                    nodoRaiz = rotarDobleDerecho(nodoRaiz);
+                }
+            }
+
+            return nodoRaiz;
+        }
+
+        public bool encontrarValor(int valor)
+        {
+            if (encontrarValor(valor, raiz) != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
-        private int max(int l, int r)
+
+        private Nodo encontrarValor(int valor, Nodo nodoRaiz)
         {
-            return l > r ? l : r;
-        }
-        private int getHeight(Node current)
-        {
-            int height = 0;
-            if (current != null)
+            if (nodoRaiz != null)
             {
-                int l = getHeight(current.left);
-                int r = getHeight(current.right);
-                int m = max(l, r);
-                height = m + 1;
+                if (valor == nodoRaiz.elemento)
+                {
+                    return nodoRaiz;
+                }
+                else if (valor < nodoRaiz.elemento)
+                {
+                    return encontrarValor(valor, nodoRaiz.nodoIzquierdo);
+                }
+                else
+                {
+                    return encontrarValor(valor, nodoRaiz.nodoDerecho);
+                }
             }
-            return height;
+            else
+            {
+                return null;
+            }
         }
-        private int balance_factor(Node current)
+
+        private void arbolPreOrden(Nodo raiz)
         {
-            int l = getHeight(current.left);
-            int r = getHeight(current.right);
-            int b_factor = l - r;
-            return b_factor;
+            concatenacion = concatenacion + raiz.elemento + "\n";
+
+            if (raiz.nodoIzquierdo != null)
+            {
+                arbolPreOrden(raiz.nodoIzquierdo);
+            }
+
+            if (raiz.nodoDerecho != null)
+            {
+                arbolPreOrden(raiz.nodoDerecho);
+            }
         }
-        private Node RotateRR(Node parent)
+
+        private void arbolInOrden(Nodo raiz)
         {
-            Node pivot = parent.right;
-            parent.right = pivot.left;
-            pivot.left = parent;
-            return pivot;
+            if (raiz.nodoIzquierdo != null)
+            {
+                arbolInOrden(raiz.nodoIzquierdo);
+            }
+
+            concatenacion = concatenacion + raiz.elemento + "\n";
+
+            if (raiz.nodoDerecho != null)
+            {
+                arbolInOrden(raiz.nodoDerecho);
+            }
         }
-        private Node RotateLL(Node parent)
+
+        private void arbolPostOrden(Nodo raiz)
         {
-            Node pivot = parent.left;
-            parent.left = pivot.right;
-            pivot.right = parent;
-            return pivot;
+            if (raiz.nodoIzquierdo != null)
+            {
+                arbolPostOrden(raiz.nodoIzquierdo);
+            }
+
+            if (raiz.nodoDerecho != null)
+            {
+                arbolPostOrden(raiz.nodoDerecho);
+            }
+
+            concatenacion = concatenacion + raiz.elemento + "\n";
         }
-        private Node RotateLR(Node parent)
+
+        public string mostrarArbolPreorden()
         {
-            Node pivot = parent.left;
-            parent.left = RotateRR(pivot);
-            return RotateLL(parent);
+            concatenacion = "";
+            arbolPreOrden(raiz);
+            return concatenacion;
         }
-        private Node RotateRL(Node parent)
+
+        public string mostarArbolInOrden()
         {
-            Node pivot = parent.right;
-            parent.right = RotateLL(pivot);
-            return RotateRR(parent);
+            concatenacion = "";
+            arbolInOrden(raiz);
+            return concatenacion;
+        }
+
+        public string mostarArbolPostOrden()
+        {
+            concatenacion = "";
+            arbolPostOrden(raiz);
+            return concatenacion;
+        }
+
+        private int nodoMayorValor(int nodoIzquierdo, int nodoDerecho)
+        {
+            return nodoIzquierdo > nodoDerecho ? nodoIzquierdo : nodoDerecho;
+        }
+
+        private int obtenerAlturaNodoRaiz(Nodo nodoRaiz)
+        {
+            int altura = 0;
+
+            if (nodoRaiz != null)
+            {
+                int izquierdo = obtenerAlturaNodoRaiz(nodoRaiz.nodoIzquierdo);
+                int derecho = obtenerAlturaNodoRaiz(nodoRaiz.nodoDerecho);
+                int maximo = nodoMayorValor(izquierdo, derecho);
+
+                altura = maximo + 1;
+            }
+
+            return altura;
+        }
+
+        private int obtenerFactorEquilibrioNodo(Nodo nodoRaiz)
+        {
+            int izquierdo = obtenerAlturaNodoRaiz(nodoRaiz.nodoIzquierdo);
+            int derecho = obtenerAlturaNodoRaiz(nodoRaiz.nodoDerecho);
+
+            return izquierdo - derecho;
+        }
+
+        private Nodo rotarDobleIzquierdo(Nodo nodoRaiz)
+        {
+            Nodo nodo = nodoRaiz.nodoIzquierdo;
+            nodoRaiz.nodoIzquierdo = nodo.nodoDerecho;
+            nodo.nodoDerecho = nodoRaiz;
+
+            return nodo;
+        }
+
+        private Nodo rotarDobleDerecho(Nodo nodoRaiz)
+        {
+            Nodo nodo = nodoRaiz.nodoDerecho;
+            nodoRaiz.nodoDerecho = nodo.nodoIzquierdo;
+            nodo.nodoIzquierdo = nodoRaiz;
+
+            return nodo;
+        }
+
+        private Nodo rotarSimpleDerecho(Nodo nodoRaiz)
+        {
+            Nodo nodo = nodoRaiz.nodoIzquierdo;
+            nodoRaiz.nodoIzquierdo = rotarDobleDerecho(nodo);
+
+            return rotarDobleIzquierdo(nodoRaiz);
+        }
+
+        private Nodo rotarSimpleIzquierdo(Nodo nodoRaiz)
+        {
+            Nodo nodo = nodoRaiz.nodoDerecho;
+            nodoRaiz.nodoDerecho = rotarDobleIzquierdo(nodo);
+
+            return rotarDobleDerecho(nodoRaiz);
+        }
+
+        public bool verificarArbolVacio()
+        {
+            return raiz != null ? false : true;
         }
     }
 }

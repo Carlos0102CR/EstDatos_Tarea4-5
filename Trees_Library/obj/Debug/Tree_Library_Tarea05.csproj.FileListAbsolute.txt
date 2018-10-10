@@ -1,4 +1,3 @@
-C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\Trees_Library\obj\Debug\Tree_Library_Tarea05.csprojAssemblyReference.cache
 C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\Trees_Library\obj\Debug\Tree_Library_Tarea05.csproj.CoreCompileInputs.cache
 C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\Trees_Library\bin\Debug\Trees_Library.dll
 C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\Trees_Library\bin\Debug\Trees_Library.pdb

@@ -1,10 +1,12 @@
-﻿public class Gestor
+﻿using Trees_Library.AVL;
+
+public class Gestor
 {
-    private ALVTree arbolAVL;
+    private Arbol_AVL arbol;
 
     public Gestor()
     {
-        arbolAVL = new ALVTree();
+        arbol = new Arbol_AVL();
     }
 
     public string mostarArbolPreOrden()

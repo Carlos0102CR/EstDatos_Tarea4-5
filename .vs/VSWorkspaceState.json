@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\EstDatos_Tarea05",
+    "\\Tarea06",
     "\\Trees_Library",
     "\\Trees_Library\\AVL",
     "\\Trees_Library\\Node"
   ],
-  "SelectedNode": "\\Trees_Library\\Node\\Nodo.cs",
+  "SelectedNode": "\\Tarea06\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

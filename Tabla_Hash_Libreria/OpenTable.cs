@@ -19,7 +19,7 @@ namespace Tabla_Hash_Libreria
                 table[i] = null;
             }
         }
-        public void insert(int key, string data)
+        public void insert(int key, Persona data)
         {
             HashNode nObj = new HashNode(key, data);
             int hash = key % size;
@@ -39,7 +39,7 @@ namespace Tabla_Hash_Libreria
                 return;
             }
         }
-        public string retrieve(int key)
+        public Persona retrieve(int key)
         {
             int hash = key % size;
             while (table[hash] != null && table[hash].getkey() % size != key % size)
@@ -57,7 +57,7 @@ namespace Tabla_Hash_Libreria
             }
             else
             {
-                return "nothing found!";
+                return null;
             }
         }
         public void print()

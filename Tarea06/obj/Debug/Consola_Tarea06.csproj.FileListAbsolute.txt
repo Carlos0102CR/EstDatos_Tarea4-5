@@ -1,2 +1,10 @@
-C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\Tarea06\obj\Debug\Consola_Tarea06.csprojAssemblyReference.cache
-C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\Tarea06\obj\Debug\Consola_Tarea06.csproj.CoreCompileInputs.cache
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\bin\Debug\Tarea06.exe.config
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\bin\Debug\Tarea06.exe
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\bin\Debug\Tarea06.pdb
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\obj\Debug\Consola_Tarea06.csprojResolveAssemblyReference.cache
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\obj\Debug\Consola_Tarea06.csproj.CoreCompileInputs.cache
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\obj\Debug\Tarea06.exe
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\obj\Debug\Tarea06.pdb
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\bin\Debug\Tabla_Hash_Libreria.dll
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\bin\Debug\Tabla_Hash_Libreria.pdb
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Tarea06\obj\Debug\Consola_Tarea06.csproj.CopyComplete

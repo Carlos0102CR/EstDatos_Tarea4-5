@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trees_Library
 {
-    public class redBlackTree
+    public class Arbol_Rojo_Negro
     {
     }
 }

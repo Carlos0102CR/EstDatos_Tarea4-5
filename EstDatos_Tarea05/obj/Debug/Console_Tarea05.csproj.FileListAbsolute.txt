@@ -5,3 +5,7 @@ C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\Est
 C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\EstDatos_Tarea05\obj\Debug\Console_Tarea05.csproj.CoreCompileInputs.cache
 C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\EstDatos_Tarea05\obj\Debug\EstDatos_Tarea05.exe
 C:\Users\jmadr\Desktop\Varios\CosasU\Estructuras de datos 2\Tareas\Tarea 4-5\EstDatos_Tarea05\obj\Debug\EstDatos_Tarea05.pdb
+C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\Console_Tarea05.csprojAssemblyReference.cache
+C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\Console_Tarea05.csproj.CoreCompileInputs.cache
+C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\EstDatos_Tarea05.exe
+C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\EstDatos_Tarea05.pdb

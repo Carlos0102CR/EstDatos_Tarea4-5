@@ -41,10 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AVL\avlTree.cs" />
-    <Compile Include="B+\bPlusTree.cs" />
-    <Compile Include="B\bTree.cs" />
-    <Compile Include="Red-Black\redBlackTree.cs" />
+    <Compile Include="AVL\Arbol_AVL.cs" />
+    <Compile Include="B+\Arbol_BMas.cs" />
+    <Compile Include="B\Arbol_B.cs" />
+    <Compile Include="Node\Nodo.cs" />
+    <Compile Include="Rojo-Negro\Arbol_Rojo_Negro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

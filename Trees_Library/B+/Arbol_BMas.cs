@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Trees_Library.B
+namespace Trees_Library.B_
 {
-    class bTree
+    class Arbol_BMas
     {
     }
 }

@@ -45,6 +45,7 @@
     <Compile Include="B+\Arbol_BMas.cs" />
     <Compile Include="B\Arbol_B.cs" />
     <Compile Include="Node\Nodo.cs" />
+    <Compile Include="Node\NodoBtree.cs" />
     <Compile Include="Rojo-Negro\Arbol_Rojo_Negro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

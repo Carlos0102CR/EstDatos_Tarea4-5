@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trees_Library.B
 {
-    class Arbol_B
+  public  class Arbol_B
     {
     }
 }

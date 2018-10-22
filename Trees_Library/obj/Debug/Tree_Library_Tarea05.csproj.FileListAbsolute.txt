@@ -3,3 +3,9 @@ C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\Trees_Library\bin\Debug\T
 C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\Trees_Library\bin\Debug\Trees_Library.pdb
 C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\Trees_Library\obj\Debug\Trees_Library.dll
 C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\Trees_Library\obj\Debug\Trees_Library.pdb
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Trees_Library\bin\Debug\Trees_Library.dll
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Trees_Library\bin\Debug\Trees_Library.pdb
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Trees_Library\obj\Debug\Tree_Library_Tarea05.csprojResolveAssemblyReference.cache
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Trees_Library\obj\Debug\Tree_Library_Tarea05.csproj.CoreCompileInputs.cache
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Trees_Library\obj\Debug\Trees_Library.dll
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\Trees_Library\obj\Debug\Trees_Library.pdb

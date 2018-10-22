@@ -9,3 +9,13 @@ C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debu
 C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\Console_Tarea05.csproj.CoreCompileInputs.cache
 C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\EstDatos_Tarea05.exe
 C:\Users\David Madrigal\Source\Repos\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\EstDatos_Tarea05.pdb
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\EstDatos_Tarea05\bin\Debug\EstDatos_Tarea05.exe.config
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\EstDatos_Tarea05\bin\Debug\EstDatos_Tarea05.exe
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\EstDatos_Tarea05\bin\Debug\EstDatos_Tarea05.pdb
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\EstDatos_Tarea05\bin\Debug\Trees_Library.dll
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\EstDatos_Tarea05\bin\Debug\Trees_Library.pdb
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\Console_Tarea05.csprojResolveAssemblyReference.cache
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\Console_Tarea05.csproj.CoreCompileInputs.cache
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\Console_Tarea05.csproj.CopyComplete
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\EstDatos_Tarea05.exe
+C:\Users\danil\OneDrive\Documents\GitHub\EstDatos_Tarea4-5\EstDatos_Tarea05\obj\Debug\EstDatos_Tarea05.pdb
